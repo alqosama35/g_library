@@ -1,0 +1,323 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+ }
+ header{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+ nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 500px;
+ }
+ nav  li{
+    list-style: none;
+    margin:40px 20px 0 20px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:4px 3px 4px black ;
+ }
+ nav a{
+    text-decoration: none;
+ }
+ nav a li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: rgb(255, 255, 255);
+    width: 0;
+    height: 3px;
+    transition: 0.5s;
+ }
+ nav a li .cons{
+   text-decoration: underline;
+   text-underline-offset: 5px;
+   box-shadow: 2px 1px 3px 1px black;
+   color: white;
+ }
+ nav a li:hover:after{
+    width: 100%;
+    box-shadow: 2px 1px 3px 1px black;
+ }
+ #bar-list{
+    margin:30px 30px 0 0;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+ }
+ #bar-list:hover{
+    color: rgb(212, 211, 211);
+ }
+ #dropleft{
+    width: 300px;
+    height: 600px;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    margin-top: 70px;
+    right: 0;
+    z-index: 7;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    position: fixed;
+ }
+ #dropleft p{
+    line-height: 23px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ #dropleft a{
+    text-decoration: none;
+ }
+ #dropleft p:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 233, 233);
+    
+ }
+ .bar{
+   display: flex;
+   justify-content: space-around;
+ }
+ .bar p{
+   color: white;
+   margin-top: 35px ;
+   margin-right: 10px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ main{
+    background: url(../imgs/p2.jpeg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+ }
+ .layout{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+ .title{
+    text-align: center;
+     padding-top: 300px;
+     padding-left: 220px;
+     color: rgb(180, 180, 180);
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     position: absolute;
+     text-transform: capitalize;
+ }
+ .title h1{
+    color: white;
+    font-size: 4em;
+    text-shadow: 7px 3px 5px black;
+ }
+ #register1{
+    width: 400px;
+    height: 550px;
+    margin: auto;
+    margin: 120px 0 0 530px;
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    text-align: center;
+   padding-top: 50px;
+ }
+ #register2{
+   width: 400px;
+    height: 550px;
+    margin: auto;
+    margin: 120px 0 0 530px;
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    text-align: center;
+    padding-top: 50px;
+ }
+ .close{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    margin-left: 370px;
+    margin-top: 5px;
+ }
+ label{
+    color: white;
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin: 10px 0 5px 0;
+ }
+ form h2{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    text-shadow:4px 3px 4px black ;
+ }
+ form p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 7px;
+    margin-bottom: 5px;
+ }
+form button{
+    border: none;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+form button:hover{
+    background-color: rgb(223, 223, 223);
+}
+.change{
+   display: flex;
+   justify-content: center;
+}
+form a{
+   color: white;
+   text-decoration:underline white;
+   margin-top: 7px;
+   font-size: 20px;
+}
+form i{
+   font-size: 30px;
+   margin-left: 10px;
+}
+form a:hover{
+   color: rgb(159, 159, 159);
+}
+ .textbox{
+    border: none;
+    width: 250px;
+    height: 25px;
+ }
+ table{
+   position: absolute;
+  border: solid;
+   color: white;
+   font-size: 2em;
+   margin-top: 150px;
+   margin-left: 200px;
+   width: 75%;
+   border-radius: 10px;
+ }
+ td , th {
+   text-align: center;
+   border:1px solid;
+   text-shadow:6px 5px 4px rgb(0, 0, 0) ;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border-radius: 10px;
+ }
+ .vid{
+   background: -webkit-linear-gradient(left,rgb(73, 73, 73),rgb(177, 176, 176),rgb(73, 73, 73));
+   padding-top: 30px;
+ }
+ .vid video{
+   width: 100%;
+   height: 400px;
+   margin: auto;
+ }
+ .read{
+   width: 60%;
+   height: 300px;
+   margin-left: 10px;
+   font-size: 2em;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(255, 255, 255);
+   text-shadow: 2px 3px 4px rgb(0, 0, 0);
+   margin: auto;
+   text-align: center;
+ }
+ section{
+   height: 720px;
+ }
+ .cat{
+   padding-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   column-gap: 10px;
+   margin-top: 15px;
+   margin: auto;
+   background: -webkit-linear-gradient(left,rgb(172, 172, 198),white,rgb(172, 172, 198));
+ }
+ .cat a img{
+   margin-left: 40px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   border: 1px solid black;
+   box-shadow: 2px 2px 7px 4px black;
+   transition: 0.5s;
+ }
+ .cat a img:hover{
+   transform: scale(1.1);
+ }
+ .cat p{
+   text-align: center;
+   color: rgb(50, 50, 50);
+   text-shadow: 2px 3px 4px rgb(0, 0, 0);
+   margin-bottom: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ footer{
+   width: 100%;
+   background:-webkit-linear-gradient(left,rgb(123, 122, 122),rgb(196, 194, 194),rgb(124, 123, 123)) ;
+ }
+ .foot{
+    width: 100%;
+    height: 400px;
+ }
+ .foot img{
+   margin-left: 540px;
+   margin-top: 30px;
+   border: solid;
+ }
+ .foot p{
+   color: rgb(19, 19, 19);
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: 10px;
+   font-size: 1.5em;
+   text-shadow: 2px 3px 4px rgb(0, 0, 0);
+ }
+ .foot .ico{
+   width: 40%;
+   margin: auto;
+   display: flex;
+   font-size: 40px;
+   justify-content: space-around;
+   color: black;
+   margin-top: 30px;
+ }
+ .foot a{
+   color: rgb(0, 0, 0);
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   padding-top: 3px;
+ }
+ .foot a:hover{
+   color: rgb(49, 49, 49);
+ }
