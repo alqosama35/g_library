@@ -59,12 +59,9 @@ button{
 .title{
   margin-top: -260px;
   margin-left: -350px;
-  
-}
-
-.center-text span{
   color:  #358F1E ;
 }
+
 .categories-contenir{
   margin-top: 50px;
   display: grid;
