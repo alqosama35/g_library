@@ -6,10 +6,10 @@
     height: 400px;
 }
 body{
-    background-image:url('../g_library/imgs/stars1.webp') ;
+    background-image:url('imgs/stars1.webp') ;
 }
 #page-header {
-    background-image: url(../g_library/imgs/Brown\ Torn\ Romance\ Twitter\ Header\ \ \(1\).png);
+    background-image: url('imgs/Brown\ Torn\ Romance\ Twitter\ Header\ \ \(1\).png');
    
     width: 100%;
     height: 40vh;
