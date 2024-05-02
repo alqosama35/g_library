@@ -128,10 +128,14 @@
             <a href="https://online.fliphtml5.com/vrxxs/fzqn/" target="_blank"><button class="zb">Read online</button></a>
          </div>
       
-
+<script>
+    function search(value) { var books = document.querySelectorAll('.cc, .dd, .tt, .ff, .ii, .ll, .oo, .ww, .zz, .cinderela');
+ var searchTerm = value.toLowerCase(); books.forEach(function(book) { var title = book.querySelector('p').innerText.toLowerCase();
+  if (title.includes(searchTerm))
+ { book.style.display = 'block'; } else { book.style.display = 'none'; } }); }
+</script>
 
       
-
 
 
 
