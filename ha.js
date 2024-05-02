@@ -38,10 +38,10 @@ function updateSelectedBooks() {
     const bookSelection = document.getElementById('bookSelection');
     const selectedBooks = document.getElementById('selectedBooks');
 
-    // مسح جميع الخيارات الحالية من عنصر select
+    
     selectedBooks.innerHTML = '';
 
-    // إضافة الكتب المختارة كخيارات إلى عنصر select
+    
     for (let i = 0; i < bookSelection.elements.length; i++) {
         const checkbox = bookSelection.elements[i];
         if (checkbox.type === 'checkbox' && checkbox.checked) {
@@ -53,21 +53,21 @@ function updateSelectedBooks() {
     }
 }
 
-// دالة لعملية شراء الكتب المختارة
+
 function buyBooks() {
-    updateSelectedBooks(); // تحديث الكتب المختارة قبل عملية الشراء
+    updateSelectedBooks(); 
     const selectedBooks = document.getElementById('selectedBooks');
     const selectedOptions = Array.from(selectedBooks.selectedOptions).map(option => option.value);
-    // يمكنك هنا إضافة التعليمات لعملية الشراء، مثل فتح صفحة شراء أو إجراء الإجراء المطلوب
+    
     console.log('الكتب المحددة:', selectedOptions);
-    // هنا يمكنك إضافة الخطوات الخاصة بعملية الشراء
+    
 }
 
-// تحديث الكتب المختارة عند تغيير حالة الـ checkboxes
+
 const checkboxes = document.querySelectorAll('#bookSelection input[type="checkbox"]');
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', updateSelectedBooks);
 });
 
-// تحديث الكتب المختارة عند تحميل الصفحة لأول مرة
+
 window.addEventListener('load', updateSelectedBooks);
