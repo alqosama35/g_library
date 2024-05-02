@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 #horor{
-  background: url('../imgs/back.jpg') center center/cover no-repeat;
+  background: url('imgs/back.jpg') center center/cover no-repeat;
   height: 100%;
 }
 #bookList {
